@@ -1,0 +1,262 @@
+/* Custom Colors */
+:root {
+    --primary-color: #6a1b9a; /* Purple */
+    --secondary-color: #87CEEB; /* Sky Blue */
+    --text-color: #ffffff;
+}
+
+/* Navbar Customization */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--text-color) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Button Customization */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Overview Card Customization */
+.card {
+    border: none;
+    background-color: #f3f4f6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    color: var(--primary-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+/* Table Customization */
+.table thead {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.table tbody {
+    background-color: #fff;
+}
+
+.table td, .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Profile Image */
+.profile-img {
+    border: 4px solid var(--primary-color);
+}
+
+/* Section Headers */
+h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* User Profile Info */
+.profile-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Customize List Group Items */
+.list-group-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.list-group-item:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+/* Custom Colors */
+:root {
+    --primary-color: #6a1b9a; /* Purple */
+    --secondary-color: #87CEEB; /* Sky Blue */
+    --text-color: #ffffff;
+}
+
+/* General Body Animation */
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Effect for the Page Load */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Navbar Customization */
+.navbar {
+    background-color: var(--primary-color) !important;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--text-color) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Navbar Slide-in Effect */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Button Customization */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: scale(1.1); /* Scale up effect */
+}
+
+/* Overview Card Customization */
+.card {
+    border: none;
+    background-color: #f3f4f6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+    color: var(--primary-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight scale-up on hover */
+}
+
+/* Table Customization */
+.table thead {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.table tbody {
+    background-color: #fff;
+}
+
+.table td, .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Profile Image */
+.profile-img {
+    border: 4px solid var(--primary-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: rotate(15deg); /* Rotate effect on hover */
+}
+
+/* Section Headers */
+h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Account Settings Section */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Customize List Group Items */
+.list-group-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transform: translateX(5px); /* Slide effect */
+}
+
+/* Add Slide-in Effect for Sections */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* User Profile Info */
+.profile-info p {
+    font-size: 1rem;
+    color: #333;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Transition for the Cards and Other Elements */
+.card, .table, .list-group, .btn {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover, .btn:hover, .list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
